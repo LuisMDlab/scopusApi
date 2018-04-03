@@ -146,7 +146,7 @@ for binomio in article_info.keys():
                 results_dict.setdefault('autor', ['Nulo'])
                 results_dict['autor'].append('Nulo')
     
-               #Return article's Scopus Link
+                #Return article's Scopus Link
                 results_dict.setdefault('link', ['Nulo'])
                 results_dict['link'].append('Nulo')
     
@@ -162,13 +162,15 @@ for binomio in article_info.keys():
                 results_dict.setdefault('data', ['Nulo'])
                 results_dict['data'].append('Nulo')
                 
-                Returns Author's Number
+                #Returns Author's Number
                 results_dict.setdefault('n_autores', ['Nulo'])
                 results_dict['n_autores'].append('Nulo')
                 
                 #Return References Number
                 results_dict.setdefault('n_ref', ['Nulo'])
                 results_dict['n_ref'].append('Nulo')
+                
+                #Show a percent count for the articles number of a searched therm
                 print(str(contagem/len(article_info[binomio])*100)+'%')
                 continue
                 
